@@ -153,6 +153,23 @@ def create_batch_file(python_command, script_name):
 create_batch_file("py -3.11", r"C:\Windows\System32\HLTN\aespr-01232025.py")
 batch_file_path = r"C:\Windows\System32\HLTN\aespremium_nogui.bat"
 os.system('cls')
+import time
+
+def countdown(minutes):
+    total_seconds = minutes * 60
+    while total_seconds > 0:
+        mins, secs = divmod(total_seconds, 60)
+        print("")
+        print("")
+        print("")
+        print("")
+        print("Be patient, PREM is encrypting data to avoid ban/detection.")
+        print(f"{mins:02}:{secs:02}", end="\r")
+        time.sleep(1)
+        total_seconds -= 1
+    
+
+countdown(5)
 
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
