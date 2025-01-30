@@ -18,7 +18,7 @@ if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 
-result = check_string_in_url("https://raw.githubusercontent.com/xxjsdaesoisadfsimgjomwpp/installer/refs/heads/main/uniqueid_3.0.txt", file_contentsx1)
+result = check_string_in_url("https://raw.githubusercontent.com/asd928149sdoijfsodfa/installer/refs/heads/main/uniqueid_3.0.txt", file_contentsx1)
 from datetime import datetime, timedelta
 import time
 def check_service_status(service_name):
