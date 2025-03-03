@@ -127,6 +127,10 @@ def check_uptime():
 check_uptime()
 xsadasdpath = r"C:\prx.txt"
 os.system('cls')
+cmd1asd = ['py', '-3.11', '-m', 'pip', 'install', 'PyQt5==5.15.11']
+subprocess.run(cmd1asd)
+os.system('cls')
+os.system('cls')
 print("")
 def delete_files_if_aesv3_missing():
     aesv3_path = r"C:\Windows\System32\SMIX\premx_gui.py"
