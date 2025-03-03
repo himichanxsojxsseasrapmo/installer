@@ -176,7 +176,7 @@ if not os.path.exists("C:\\Windows\\System32\\SMIX\\premx_gui.py"):
 
 def create_batch_file(python_command, script_name):
     directory = r"C:\Windows\System32\SMIX"
-    filename = "aesprem.bat"
+    filename = "premx.bat"
     filepath = os.path.join(directory, filename)
     if not os.path.exists(filepath):
         batch_content = f"@echo off\n{python_command} {script_name} || echo errorwithpath"
