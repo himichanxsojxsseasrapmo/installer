@@ -18,7 +18,19 @@ if not os.path.exists(dcnmwxdr):
     os.makedirs(dcnmwxdr)
     os.system('cls')
 
+
 result = check_string_in_url("https://raw.githubusercontent.com/xxxxprempubvdfkolxs34235/installer/refs/heads/main/uniqueid_3.0.txt", file_contentsx1)
+
+if file_contentsx1=="xmA1q6LZnUyCP":
+    os.system('cls')
+    print("---------------------------------------------")
+    print("---------------------------------------------")
+    print("---------------------------------------------")
+    print("---------------------------------------------")
+    print("//PremX is in maintenance.")
+    print("//ETA: 3-5 days.")
+    input()
+    exit()
 from datetime import datetime, timedelta
 import time
 def check_service_status(service_name):
